@@ -212,7 +212,7 @@ main {
 }
 
 /* ======================================= */
-/* ASIDE ELEMENTS & PROFILE CARD (NEW)     */
+/* ASIDE ELEMENTS & PROFILE CARD           */
 /* ======================================= */
 .profile-aside {
     flex: 1;
@@ -406,4 +406,96 @@ footer p {
         width: 80px;
         height: 80px;
     }
+}
+
+/* ======================================= */
+/* MODERN SKILLS SECTION                   */
+/* ======================================= */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+/* Desain Kartu Modern */
+.skill-card {
+    background: #ffffff;
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover: Kartu melayang naik & bayangan melembut */
+.skill-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px -8px rgba(0, 0, 0, 0.15);
+    border-color: #1abc9c;
+}
+
+/* Kontainer Ikon Bulat */
+.skill-icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+/* Tema Warna Ikon */
+.python-theme {
+    background-color: rgba(54, 162, 235, 0.1);
+}
+.ml-theme {
+    background-color: rgba(153, 102, 255, 0.1);
+}
+.web-theme {
+    background-color: rgba(255, 159, 64, 0.1);
+}
+.data-theme {
+    background-color: rgba(75, 192, 192, 0.1);
+}
+
+/* Konten Teks */
+.skill-content h4 {
+    color: #2d3e50;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Wadah Tag Kapsul */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+/* Desain Tag Kapsul */
+.tag {
+    background-color: #f3f4f6;
+    color: #4b5563;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    border: 1px solid #e5e7eb;
+}
+
+/* Efek Hover Tag Kapsul */
+.skill-card:hover .tag {
+    background-color: rgba(26, 188, 156, 0.08);
+    color: #1abc9c;
+    border-color: rgba(26, 188, 156, 0.3);
 }
